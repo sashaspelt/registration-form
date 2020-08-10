@@ -4,7 +4,7 @@ block content
 
   .signupForm
 
-    h1 Sign up below
+    h1 Sign up below 
     h4 Don't worry - I won't save your data!
 
     form(action="." method="POST")
@@ -50,6 +50,7 @@ block content
             checked=gender == "female"
         )
         | Female
+        
 
       p
         label(for="password") Choose a password:
@@ -58,3 +59,9 @@ block content
             id="password"
             name="password"
         )
+
+      input(type="submit" value="submit")
+
+
+
+

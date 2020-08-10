@@ -1,0 +1,60 @@
+extends layout
+
+block content
+
+  .signupForm
+
+    h1 Sign up below
+    h4 Don't worry - I won't save your data!
+
+    form(action="." method="POST")
+      p
+        label(for="name") Name:
+        input(
+            type="text"
+            id="name"
+            name="name"
+        )
+
+      p
+        label(for="email") Email:
+        input(
+            type="email"
+            id="email"
+            name="email"
+        )
+
+      p
+        label(for="dob") Date of birth:
+        input(
+            type="date"
+            id="dob"
+            name="dob"
+        )
+
+    
+      p.gender
+        input(
+            type="radio"
+            name="gender-filter"
+            value="1"
+            checked=gender == "male"
+        )
+        | Male
+
+      p.gender
+        input(
+            type="radio"
+            name="gender-filter"
+            value="0"
+            checked=gender == "female"
+        )
+        | Female
+
+      p
+        label(for="password") Choose a password:
+        input(
+            type="password"
+            id="password"
+            name="password"
+        )
